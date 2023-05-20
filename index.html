@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="container">
+        <div id="heading-top">
+          <h1>PASSWORD GENERATOR</h1>
+        </div>
+
+        <div id="generator-container">
+          <div id="input-container">
+            <input id="input" readonly placeholder="password generated" />
+            <button id="copy-btn">
+                <span class="copyMsg active" ></span>
+                <p class="copyText">c</p>
+            </button>
+          </div>
+          <div id="option-container">
+            <div>
+              <div id="password">
+                <span id="passwor-len">Password Length</span>
+                <span id="length"></span>
+              </div>
+
+              <div id="input-range">
+                <input type="range" min="1" max="10" step="1" id="range"/>
+              </div>
+
+              <div id="options">
+                <div class="options-checkbox">
+                  <input  type="checkbox" id="upperCase" />
+                  <label for="upperCase" id="label">UPPERCASE</label>
+                </div>
+                <div class="options-checkbox">
+                  <input type="checkbox" id="lowerCase" />
+                  <label for="lowerCase" id="label">LOWERCASE</label>
+                </div>
+                <div class="options-checkbox">
+                  <input type="checkbox" id="number" />
+                  <label for="number" id="label">NUMBER</label>
+                </div>
+                <div class="options-checkbox">
+                  <input type="checkbox" id="symbol" />
+                  <label for="symbol" id="label">SYMBOL</label>
+                </div>
+
+                <div id="strength-div">
+                  <span><p id="strength">Strength</p></span>
+                  <button class="indicator"></button>
+                </div>
+                <div id="generate-btn"></div>
+                <button type="submit" id="generate-password">GENERATE PASSWORD</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <script src="./script.js"></script>
+  </body>
+</html>
